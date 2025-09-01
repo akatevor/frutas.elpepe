@@ -184,8 +184,6 @@ C:\xampp\htdocs\Tarea1\obj\Debug\net9.0\compressed\lal0tih3ni-2z0ns9nrw6.gz
 C:\xampp\htdocs\Tarea1\obj\Debug\net9.0\compressed\jitibr8cy9-muycvpuwrr.gz
 C:\xampp\htdocs\Tarea1\obj\Debug\net9.0\compressed\lrfxmgt8lr-87fc7y1x7t.gz
 C:\xampp\htdocs\Tarea1\obj\Debug\net9.0\compressed\yxqbpkblvd-mlv21k5csn.gz
-C:\xampp\htdocs\Tarea1\obj\Debug\net9.0\compressed\rq5dhvkq6x-8q1n4sw2it.gz
-C:\xampp\htdocs\Tarea1\obj\Debug\net9.0\compressed\s8bbk4ndgw-8q1n4sw2it.gz
 C:\xampp\htdocs\Tarea1\obj\Debug\net9.0\staticwebassets.build.json
 C:\xampp\htdocs\Tarea1\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\xampp\htdocs\Tarea1\obj\Debug\net9.0\staticwebassets.development.json
@@ -536,3 +534,5 @@ C:\xampp\htdocs\Tarea1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.re
 C:\xampp\htdocs\Tarea1\obj\Debug\net9.0\Tarea1.csproj.Up2Date
 C:\xampp\htdocs\Tarea1\bin\Debug\net9.0\Models\frutas.json
 C:\xampp\htdocs\Tarea1\obj\Debug\net9.0\Tarea1.sourcelink.json
+C:\xampp\htdocs\Tarea1\obj\Debug\net9.0\compressed\rq5dhvkq6x-3y1u0wpp9r.gz
+C:\xampp\htdocs\Tarea1\obj\Debug\net9.0\compressed\s8bbk4ndgw-3y1u0wpp9r.gz

@@ -1,49 +1,128 @@
 /* _content/Tarea1/Views/Shared/_Layout.cshtml.rz.scp.css */
-/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand[b-nr3lewp12n] {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+/* ============================
+   Global Styles
+============================ */
+body[b-nr3lewp12n] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color: #333;
 }
 
-a[b-nr3lewp12n] {
-  color: #0077cc;
+/* ============================
+   Navbar (Bootstrap override)
+============================ */
+.navbar[b-nr3lewp12n] {
+    background: linear-gradient(90deg, #1b6ec2, #3a8ee6);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+.navbar .navbar-brand[b-nr3lewp12n] {
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-brand:hover[b-nr3lewp12n] {
+    color: #ffd700 !important;
+}
+
+/* Navbar toggler icon */
+.navbar-toggler[b-nr3lewp12n] {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon[b-nr3lewp12n] {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ============================
+   Main Container
+============================ */
+main.container[b-nr3lewp12n] {
+    padding: 2.5rem 1rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* ============================
+   Footer
+============================ */
+footer.footer[b-nr3lewp12n] {
+    padding: 1.5rem 0;
+    background: #1b1b1b;
+    color: #eee;
+    font-size: 0.9rem;
+}
+
+footer.footer a[b-nr3lewp12n] {
+    color: #ffd700;
+    transition: color 0.3s;
+}
+
+footer.footer a:hover[b-nr3lewp12n] {
+    color: #ffea00;
+}
+
+/* ============================
+   Buttons (Bootstrap override)
+============================ */
 .btn-primary[b-nr3lewp12n] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    background: linear-gradient(135deg, #1b6ec2, #3a8ee6);
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.nav-pills .nav-link.active[b-nr3lewp12n], .nav-pills .show > .nav-link[b-nr3lewp12n] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.btn-primary:hover[b-nr3lewp12n] {
+    background: linear-gradient(135deg, #3a8ee6, #1b6ec2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
-.border-top[b-nr3lewp12n] {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom[b-nr3lewp12n] {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow[b-nr3lewp12n] {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+/* ============================
+   Tables (Bootstrap override)
+============================ */
+.table[b-nr3lewp12n] {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-button.accept-policy[b-nr3lewp12n] {
-  font-size: 1rem;
-  line-height: inherit;
+.table thead[b-nr3lewp12n] {
+    background: #1b6ec2;
+    color: #fff;
 }
 
-.footer[b-nr3lewp12n] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+.table tbody tr:hover[b-nr3lewp12n] {
+    background: #f0f4ff;
+    transition: background 0.3s;
+}
+
+/* ============================
+   Forms
+============================ */
+input[b-nr3lewp12n], textarea[b-nr3lewp12n], select[b-nr3lewp12n] {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 0.5rem 0.75rem;
+    transition: all 0.3s ease;
+}
+
+input:focus[b-nr3lewp12n], textarea:focus[b-nr3lewp12n], select:focus[b-nr3lewp12n] {
+    outline: none;
+    border-color: #3a8ee6;
+    box-shadow: 0 0 8px rgba(58, 142, 230, 0.3);
+}
+
+/* ============================
+   Headings
+============================ */
+h1[b-nr3lewp12n], h2[b-nr3lewp12n], h3[b-nr3lewp12n] {
+    font-weight: 600;
+    color: #1b1b1b;
 }
