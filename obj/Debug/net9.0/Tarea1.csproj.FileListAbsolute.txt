@@ -535,3 +535,4 @@ C:\xampp\htdocs\Tarea1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.re
 C:\xampp\htdocs\Tarea1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\xampp\htdocs\Tarea1\obj\Debug\net9.0\Tarea1.csproj.Up2Date
 C:\xampp\htdocs\Tarea1\bin\Debug\net9.0\Models\frutas.json
+C:\xampp\htdocs\Tarea1\obj\Debug\net9.0\Tarea1.sourcelink.json
