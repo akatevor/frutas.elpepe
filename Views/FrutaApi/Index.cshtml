@@ -1,0 +1,36 @@
+@model List<Tarea1.Models.FrutaApi>
+
+<h2>Lista de Frutas</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Género</th>
+            <th>Familia</th>
+            <th>Orden</th>
+            <th>Carbohidratos</th>
+            <th>Proteína</th>
+            <th>Grasa</th>
+            <th>Calorías</th>
+            <th>Azúcar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var fruta in Model)
+        {
+            <tr>
+                <td>@fruta.Id</td>
+                <td>@fruta.Nombre</td>
+                <td>@fruta.Genero</td>
+                <td>@fruta.Familia</td>
+                <td>@fruta.Orden</td>
+                <td>@fruta.Nutriciones?.Carbohidratos</td>
+                <td>@fruta.Nutriciones?.Proteina</td>
+                <td>@fruta.Nutriciones?.Grasa</td>
+                <td>@fruta.Nutriciones?.Calorias</td>
+                <td>@fruta.Nutriciones?.Azucar</td>
+            </tr>
+        }
+    </tbody>
+</table>

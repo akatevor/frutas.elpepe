@@ -1,0 +1,22 @@
+@model Tarea1.Models.Fruta
+
+<div class="container mt-4">
+    <h2>@Model.Nombre</h2>
+    <div class="row">
+        <!-- Imagen -->
+        <div class="col-md-6">
+            <img src="@Model.Imagen" class="img-fluid rounded" alt="@Model.Nombre" />
+        </div>
+
+        <!-- Detalles -->
+        <div class="col-md-6">
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Color:</strong> @Model.Color</li>
+                <li class="list-group-item"><strong>Sabor:</strong> @Model.Sabor</li>
+                <li class="list-group-item"><strong>Peso Promedio:</strong> @Model.PesoPromedio</li>
+            </ul>
+
+            <a href="@Url.Action("Index", "Fruta")" class="btn btn-secondary mt-3">Volver</a>
+        </div>
+    </div>
+</div>

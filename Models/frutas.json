@@ -1,0 +1,68 @@
+{
+  "Frutas": [
+    {
+      "Id": 1,
+      "Nombre": "Manzana",
+      "Color": "Rojo",
+      "Sabor": "Dulce",
+      "PesoPromedio": "200 g",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg"
+    },
+    {
+      "Id": 2,
+      "Nombre": "Banano",
+      "Color": "Amarillo",
+      "Sabor": "Dulce",
+      "PesoPromedio": "120 g",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg"
+    },
+    {
+      "Id": 3,
+      "Nombre": "Naranja",
+      "Color": "Naranja",
+      "Sabor": "Ácido-dulce",
+      "PesoPromedio": "250 g",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg"
+    },
+    {
+      "Id": 4,
+      "Nombre": "Sandía",
+      "Color": "Verde por fuera, roja por dentro",
+      "Sabor": "Refrescante y dulce",
+      "PesoPromedio": "5 kg",
+      "Imagen": "https://th.bing.com/th/id/R.8d39447599e4f58f18760b8c1274996e?rik=TMCuGy3hbDrs9Q&riu=http%3a%2f%2fwww.frutas-hortalizas.com%2fimg%2ffruites_verdures%2fpresentacio%2f30.jpg&ehk=MfPM0CCjpEw26dDALLtnE2uLxwezD4xf5ZwVSfjNCD8%3d&risl=&pid=ImgRaw&r=0"
+    },
+    {
+      "Id": 5,
+      "Nombre": "Mango",
+      "Color": "Amarillo anaranjado",
+      "Sabor": "Dulce y jugoso",
+      "PesoPromedio": "300 g",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg"
+    },
+    {
+      "Id": 6,
+      "Nombre": "Uvas",
+      "Color": "Morado o verde",
+      "Sabor": "Dulce",
+      "PesoPromedio": "5 g cada una",
+      "Imagen": "https://tse2.mm.bing.net/th/id/OIP.ypJU1N6aK1X1nzHUhPtNGAHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
+    {
+      "Id": 7,
+      "Nombre": "Piña",
+      "Color": "Amarillo por dentro, marrón y verde por fuera",
+      "Sabor": "Dulce-ácido",
+      "PesoPromedio": "1.5 kg",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Pineapple_and_cross_section.jpg"
+    },
+    {
+      "Id": 8,
+      "Nombre": "Fresa",
+      "Color": "Rojo brillante",
+      "Sabor": "Dulce con un toque ácido",
+      "PesoPromedio": "15 g",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/2/29/PerfectStrawberry.jpg"
+    }
+  ]
+}
