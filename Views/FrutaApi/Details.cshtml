@@ -1,0 +1,29 @@
+@model Tarea1.Models.FrutaApi
+
+<div class="container mt-4">
+    <h2 class="text-primary fw-bold">@Model.Nombre</h2>
+    <div class="row">
+        <!-- Detalles principales -->
+        <div class="col-md-6">
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Género:</strong> @Model.Genero</li>
+                <li class="list-group-item"><strong>Familia:</strong> @Model.Familia</li>
+                <li class="list-group-item"><strong>Orden:</strong> @Model.Orden</li>
+            </ul>
+        </div>
+
+        <!-- Información nutricional -->
+        <div class="col-md-6">
+            <h5 class="fw-bold">🍽 Información Nutricional</h5>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Carbohidratos:</strong> @Model.Nutriciones?.Carbohidratos</li>
+                <li class="list-group-item"><strong>Proteína:</strong> @Model.Nutriciones?.Proteina</li>
+                <li class="list-group-item"><strong>Grasa:</strong> @Model.Nutriciones?.Grasa</li>
+                <li class="list-group-item"><strong>Calorías:</strong> @Model.Nutriciones?.Calorias</li>
+                <li class="list-group-item"><strong>Azúcar:</strong> @Model.Nutriciones?.Azucar</li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="@Url.Action("Index", "FrutaApi")" class="btn btn-secondary mt-4">Volver</a>
+</div>

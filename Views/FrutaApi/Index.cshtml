@@ -1,36 +1,58 @@
 @model List<Tarea1.Models.FrutaApi>
 
-<h2>Lista de Frutas</h2>
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Género</th>
-            <th>Familia</th>
-            <th>Orden</th>
-            <th>Carbohidratos</th>
-            <th>Proteína</th>
-            <th>Grasa</th>
-            <th>Calorías</th>
-            <th>Azúcar</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var fruta in Model)
+<!-- Formulario de búsqueda -->
+<form class="form-inline mb-4" method="POST" action="/FrutaApi/Find">
+    <div class="form-group mx-sm-3 mb-2">
+        <label class="mr-3">Buscar Fruta</label>
+        <input type="text" class="form-control" required name="nombre">
+    </div>
+    <button type="submit" class="btn btn-success mb-2">Buscar</button>
+</form>
+
+<!-- Botones de ordenamiento -->
+<div class="mb-4">
+    <h5>Ordenar por nutrición:</h5>
+    <a href="@Url.Action("Index", "FrutaApi", new { sortBy = "carbohidratos", order = "asc" })" class="btn btn-outline-primary btn-sm mb-1">Carbohidratos ↑</a>
+    <a href="@Url.Action("Index", "FrutaApi", new { sortBy = "carbohidratos", order = "desc" })" class="btn btn-outline-primary btn-sm mb-1">Carbohidratos ↓</a>
+
+    <a href="@Url.Action("Index", "FrutaApi", new { sortBy = "proteina", order = "asc" })" class="btn btn-outline-success btn-sm mb-1">Proteína ↑</a>
+    <a href="@Url.Action("Index", "FrutaApi", new { sortBy = "proteina", order = "desc" })" class="btn btn-outline-success btn-sm mb-1">Proteína ↓</a>
+
+    <a href="@Url.Action("Index", "FrutaApi", new { sortBy = "grasa", order = "asc" })" class="btn btn-outline-warning btn-sm mb-1">Grasa ↑</a>
+    <a href="@Url.Action("Index", "FrutaApi", new { sortBy = "grasa", order = "desc" })" class="btn btn-outline-warning btn-sm mb-1">Grasa ↓</a>
+
+    <a href="@Url.Action("Index", "FrutaApi", new { sortBy = "calorias", order = "asc" })" class="btn btn-outline-danger btn-sm mb-1">Calorías ↑</a>
+    <a href="@Url.Action("Index", "FrutaApi", new { sortBy = "calorias", order = "desc" })" class="btn btn-outline-danger btn-sm mb-1">Calorías ↓</a>
+
+    <a href="@Url.Action("Index", "FrutaApi", new { sortBy = "azucar", order = "asc" })" class="btn btn-outline-info btn-sm mb-1">Azúcar ↑</a>
+    <a href="@Url.Action("Index", "FrutaApi", new { sortBy = "azucar", order = "desc" })" class="btn btn-outline-info btn-sm mb-1">Azúcar ↓</a>
+</div>
+
+<!-- Tarjetas de frutas -->
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
         {
-            <tr>
-                <td>@fruta.Id</td>
-                <td>@fruta.Nombre</td>
-                <td>@fruta.Genero</td>
-                <td>@fruta.Familia</td>
-                <td>@fruta.Orden</td>
-                <td>@fruta.Nutriciones?.Carbohidratos</td>
-                <td>@fruta.Nutriciones?.Proteina</td>
-                <td>@fruta.Nutriciones?.Grasa</td>
-                <td>@fruta.Nutriciones?.Calorias</td>
-                <td>@fruta.Nutriciones?.Azucar</td>
-            </tr>
+            <div class="col-md-3">
+                <div class="card mb-3 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary fw-bold">@item.Nombre</h5>
+                        <p class="card-text"><strong>Género:</strong> @item.Genero</p>
+                        <p class="card-text"><strong>Familia:</strong> @item.Familia</p>
+                        <p class="card-text"><strong>Orden:</strong> @item.Orden</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                🍽 Carbohidratos: @item.Nutriciones?.Carbohidratos <br />
+                                🥩 Proteína: @item.Nutriciones?.Proteina <br />
+                                🧈 Grasa: @item.Nutriciones?.Grasa <br />
+                                🔥 Calorías: @item.Nutriciones?.Calorias <br />
+                                🍬 Azúcar: @item.Nutriciones?.Azucar
+                            </small>
+                        </p>
+                        <a href="@Url.Action("Details", "FrutaApi", new { id = item.Id })" class="btn btn-warning">Detalles</a>
+                    </div>
+                </div>
+            </div>
         }
-    </tbody>
-</table>
+    </div>
+</div>
